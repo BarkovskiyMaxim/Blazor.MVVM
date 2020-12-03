@@ -1,7 +1,4 @@
 # Blazor.MVVM
-## Why?
-While you create a really big component and one of the requests is agile customization, you need to add a way to customize deep nodes. But by default, its can be not easily. </br>
-I trust that this solution can help you do your components more customizable and great!
 
 ## How to use?
 Use [AddMVVM](./Blazor.MVVM/Registration.cs) to register all necessary services to your application </br>
