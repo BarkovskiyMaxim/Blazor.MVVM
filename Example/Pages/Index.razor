@@ -1,0 +1,15 @@
+﻿@page "/"
+@using Blazor.MVVM;
+
+<RegistrateTemplates></RegistrateTemplates>
+
+@*uncomment for customize*@
+@*<MVVMTemplate Name="second-child" TIn="EndlessChildrenViewModel" Replace="true">
+    My Custom Child!
+</MVVMTemplate>*@
+
+<MVVMTemplate Name="example-component" ViewModel=@ViewModel TIn="RootViewModel"></MVVMTemplate>
+
+@code {
+    public RootViewModel ViewModel = new RootViewModel();
+}

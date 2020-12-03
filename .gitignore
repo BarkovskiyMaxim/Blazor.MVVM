@@ -1,0 +1,6 @@
+.cr
+.vs
+Blazor.MVVM/bin
+Blazor.MVVM/obj
+Example/bin/
+Example/obj

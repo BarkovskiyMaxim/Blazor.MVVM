@@ -1,0 +1,19 @@
+﻿@using Blazor.MVVM;
+
+<MVVMTemplate Name="example-component" TIn=RootViewModel>
+    First Child Render
+    <div>
+        <MVVMTemplate Name="first-child" ViewModel="@context.Child" TIn="EndlessChildrenViewModel"></MVVMTemplate>
+    </div>
+</MVVMTemplate>
+
+<MVVMTemplate Name="first-child" TIn=EndlessChildrenViewModel>
+    Second Child Render
+    <div>
+        <MVVMTemplate Name="second-child" ViewModel="@context.Child" TIn="EndlessChildrenViewModel"></MVVMTemplate>
+    </div>
+</MVVMTemplate>
+
+<MVVMTemplate Name="second-child" TIn=EndlessChildrenViewModel>
+    I'm here!
+</MVVMTemplate>
